@@ -26,15 +26,15 @@
 
 	$('#meteo').click(function(){
 		console.log('meteo ok');
-		var url = "http://openweathermap.org/";
+		var url = "http://openweathermap.org/city/2972315";
 		$.ajax(url)
 		.done(meteoDone)
 		.fail(meteoFail);
 
 	});
-	function meteoDone(){
+	function meteoDone(response){
+		console.log(response);
 
-		
 	}
 
 
